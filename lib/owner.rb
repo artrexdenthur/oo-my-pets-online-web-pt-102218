@@ -41,8 +41,8 @@ class Owner
   
   def sell_pets
     @pets.each do |type, type_arr|
-      type_arr.each do |pet|
-        @pets[type][pet].mood = 'nervous'
+      type_arr.each_with_index do |pet, pet_i|
+        @pets[type][pet_i].mood = 'nervous'
       end
       @pets[type] = []
     end
