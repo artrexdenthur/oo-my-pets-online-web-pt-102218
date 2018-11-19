@@ -51,6 +51,7 @@ class Owner
   def list_pets
     counts = @pets.map { |type, type_arr| type_arr.length }
     "I have #{counts[2]} fish, #{counts[1]} dog(s), and #{counts[0]} cat(s)."
+  end
   
   ############### Class Methods ################
   
