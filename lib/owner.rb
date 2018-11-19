@@ -48,6 +48,10 @@ class Owner
     end
   end
   
+  def list_pets
+    counts = @pets.map { |type, type_arr| type_arr.length }
+    "I have #{@pets[fish].length} fish, "
+  
   ############### Class Methods ################
   
   def self.all
