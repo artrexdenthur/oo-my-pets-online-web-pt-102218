@@ -45,6 +45,8 @@ class Owner
         @pets[type][pet].mood = 'nervous'
       end
       @pets[type] = []
+    end
+  end
   
   ############### Class Methods ################
   
