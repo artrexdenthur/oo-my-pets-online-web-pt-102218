@@ -39,6 +39,13 @@ class Owner
     @pets[:fishes].each { |fish| fish.mood = 'happy' }
   end
   
+  def sell_pets
+    @pets.each do |type, type_arr|
+      type_arr.each do |pet|
+        @pets[type][pet].mood = 'nervous'
+      end
+      @pets[type] = []
+  
   ############### Class Methods ################
   
   def self.all
